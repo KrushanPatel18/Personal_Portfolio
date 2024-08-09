@@ -1,0 +1,211 @@
+/* General Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background: #231f1f; /* Dark grey background */
+    color: #faf9f9; /* Light grey text color for readability */
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    padding: 20px;
+}
+.name{
+    display: flex;
+    align-items: center;
+    
+}
+
+.bio-section {
+    display: flex;
+    align-items: center;
+    text-align: left; /* Align text to the left */
+}
+
+.bio-image {
+    width: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.bio-content {
+    max-width: 520px;
+}
+
+.name{
+    padding-top: 5px;
+    
+    gap: 100px;
+    
+}
+/* Style for the resume button */
+.resume {
+    height: 30px;
+    display: flex; /* Use flexbox to center content */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    text-decoration: none;
+    color: #b1adad;
+    border: 1px solid rgb(153, 152, 152);
+    width: 130px;
+    border-radius: 60px;
+    transition: 
+        background-color 0.2s ease, 
+        color 0.3s ease,
+        transform 0.2s ease; /* Smooth transitions for background color, text color, and transform */
+}
+
+.resume a {
+    color: #848080;
+    text-decoration: none;
+}
+
+/* Hover effect */
+.resume:hover,
+.resume:focus {
+    background-color: #333; /* Darker background on hover/focus */
+    color: #faf9f9; /* Lighter text color on hover/focus */
+}
+
+/* Click effect */
+.resume:active {
+    background-color: #555; /* Even darker background when clicked */
+    color: #faf9f9; /* Maintain lighter text color */
+    transform: scale(0.95); /* Slightly shrink the button to give a pressed effect */
+}
+
+.active-status{
+    color: #8d8b8b;
+    margin-top: 5px;
+    height :10px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    gap: 10px;
+}
+@keyframes blink {
+    0%, 100% {
+        opacity: 10;
+    }
+    50% {
+        opacity: 0.3;
+    }
+}
+
+.status-indicator {
+   
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #0f0; /* Green color */
+
+    
+     /* Position it just below the content */
+     /* Align it with the left side of the content */
+    animation: blink 1s infinite; /* Animation for blinking */
+}
+
+header {
+    background: #231f1f; /* Dark grey for header */
+    color: #fff; /* White text for contrast */
+    padding: 10px;
+}
+
+nav {
+    background: #231f1f; /* Darker grey for nav background */
+    padding: 10px;
+    position: relative;
+}
+
+nav::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #333; /* Thin line to represent the shelf */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between menu items */
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px; /* Size of the icons */
+    padding: 10px 20px;
+    display: block;
+    border: 1px solid #444; /* Default border color */
+    border-radius: 60px; /* Rounded corners for button effect */
+    transition: 
+        font-size 0.3s ease, 
+        background-color 0.3s ease, 
+        border-color 0.3s ease, 
+        transform 0.3s ease; /* Smooth transitions for all effects */
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    font-size: 1.5em; /* Increase font size on hover */
+    background-color: #333; /* Darker background on hover */
+    border-color: #444; /* White border on hover */
+    transform: scale(1.3); /* Slightly increase the size */
+}
+
+nav ul li a.active,
+nav ul li a.active:hover,
+nav ul li a.active:focus {
+    font-size: 1.5em; /* Increase font size for active state */
+    background-color: #333; /* Darker background for active state */
+    border-color: #444; /* Dark grey border for active state */
+    transform: scale(1.); /* Slightly increase the size */
+}
+.about{
+    text-align: left;
+    width: 800px;
+    justify-content: center;
+    
+}
+footer {
+    background: #231f1f; /* Dark grey for footer */
+    color: #fff; /* White text for contrast */
+    text-align: center;
+    padding: 10px;
+    margin-top: auto; /* Pushes footer to the bottom */
+}
+.box{
+    font-size: 14px;
+    color: #8d8b8b;
+    align-items: center;
+    border-radius: 60px;
+    border: 0.5px solid rgb(97, 96, 96);
+    width: 160px;
+    text-align: center;
+
+}
+.content{
+    color: #8d8d8d;
+    font-size: 14px;
+}
